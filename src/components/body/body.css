@@ -1,0 +1,108 @@
+.main-body {
+  width: 100%;
+  display: flex;
+ 
+}
+
+.body_left--section {
+  width: 40%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.body_right--section {
+  width: 60%;
+  background-color: #f9f5f3;
+  height: 100vh;
+}
+
+.body_right--section > p {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.body_message {
+  max-width: 40rem;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.body_loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  top: 25%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.body_recipeList {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  border-right: 1px solid #fff;
+  text-decoration: none;
+}
+
+.body_recipeList:hover {
+  background-color: #f9f5f3;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.body_img {
+  flex: 0 0 3.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 3.8rem;
+  margin-right: 2rem;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.body_img > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s;
+}
+
+.body_list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2rem;
+  row-gap: 0.1rem;
+  align-items: center;
+}
+
+.body_title {
+  grid-column: 1/-1;
+  font-size: 1rem;
+  color: #f38e82;
+  text-overflow: ellipsis;
+  max-width: 25rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.body_publisher {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #918581;
+}/*# sourceMappingURL=body.css.map */
